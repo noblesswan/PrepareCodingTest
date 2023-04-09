@@ -1,2 +1,2 @@
-# PrepareCodingTest
-Prepare to Coding Test
+# 프로그래머스
+프로그래머스 문제 정답 

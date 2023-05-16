@@ -1,19 +1,22 @@
 class Solution {
-	boolean solution(String s) {
-		int pCount = 0;
-        int yCount = 0;
-		String[] array = s.toLowerCase().split(""); 
-		
-		for (int i = 0; i < array.length; i++) { 
-			if ("p".equals(array[i])) { 
-				pCount++;
-			} else if ("y".equals(array[i])) {
-				yCount++;
-			}
-		}
-		if (pCount != yCount) {
-			 return false;
-		}
-			return true;
-	}
+    boolean solution(String s) {
+        boolean answer = true;
+        int pP = 0;
+        int yY = 0;
+        String[] arr = String.valueOf(s).split("");
+        for(int i=0; i<arr.length; i++){
+            if(arr[i].equals("p") || arr[i].equals("P")){
+                pP++; 
+            }
+            else if(arr[i].equals("y") || arr[i].equals("Y")){
+                yY++;
+            }
+        }
+        
+        if(pP != yY){
+            answer = false;
+        }
+        
+        return answer;
+    }
 }
